@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y nginx
 
 # 设置应用目录
 WORKDIR /app
-RUN mkdir -p /app/website /app/sso /app/portal /app/console
+RUN mkdir -p /app/website /app/sso /app/portal /app/console /app/logs
 
 # 增加启动脚本
 ADD docker/docker-entrypoint.sh /app
